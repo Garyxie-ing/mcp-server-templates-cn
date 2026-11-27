@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example-mcp-server"
+version = "0.1.0"
+description = "Example MCP Server template (Python): Streamable HTTP transport, API key auth, demo tool and demo resource."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=2.0",
+    "uvicorn>=0.30",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
