@@ -1,0 +1,117 @@
+# MCP 工具目录（中文场景优先） / MCP Server Registry (China-focused)
+#
+# 收录标准 / Inclusion criteria:
+# - 每条都经过人工核实：仓库或官网真实存在，url 可打开，不收录无法验证的项目。
+# - 优先收录官方（official）MCP Server；社区（community）项目需有可运行的公开仓库。
+# - 未找到真实 MCP Server 的类别（例如：企业微信专用 Server、政务查询）不收录，
+#   不写占位条目。缺口见 registry/README.md。
+# - 每条的 language 取自对应仓库的 GitHub 语言统计；auth 为接入该 Server 所需的凭证类型。
+# - 最后核实日期 / Last verified: 2026-11-27。
+#
+# 字段说明：
+# - name: 目录内的唯一标识（小写短横线）
+# - description / description_en: 中文 / 英文一句话说明
+# - category: maps | office | logistics | finance | travel | knowledge | filesystem | web | memory | devtools
+# - url: 仓库或官网地址（必须真实可打开）
+# - language: 主要实现语言
+# - auth: none | api_key | oauth | token（接入时需要的凭证）
+# - status: official（官方发布）| community（社区维护）
+
+- name: amap-maps
+  description: "高德地图 MCP Server：地理编码、逆编码、POI 搜索、路线规划、天气。官方另有托管端点 https://mcp.amap.com/mcp（需高德 Web 服务 Key）。"
+  description_en: "Amap (Gaode Maps) MCP Server: geocoding, reverse geocoding, POI search, route planning, weather. An official hosted endpoint is also available at https://mcp.amap.com/mcp (Amap Web Service key required)."
+  category: maps
+  url: https://github.com/sugarforever/amap-mcp-server
+  language: Python
+  auth: api_key
+  status: community
+
+- name: lark-openapi-mcp
+  description: "飞书 / Lark 官方 OpenAPI MCP：消息、群组、文档、日历、多维表格等几乎全部开放接口。"
+  description_en: "Official Feishu / Lark OpenAPI MCP: messages, groups, docs, calendar, Bitable and nearly all other Open Platform APIs."
+  category: office
+  url: https://github.com/larksuite/lark-openapi-mcp
+  language: TypeScript
+  auth: oauth
+  status: official
+
+- name: dingtalk-doc
+  description: "钉钉文档 MCP：读取钉钉文档内容。"
+  description_en: "DingTalk docs MCP: read DingTalk documents."
+  category: office
+  url: https://github.com/hykfft/mcp-dingtalk-doc
+  language: Python
+  auth: api_key
+  status: community
+
+- name: kuaidi100
+  description: "快递100 官方 MCP Server：3000+ 快递公司轨迹查询、运费预估、时效预估，需快递100授权 Key（付费 API，有免费试用）。"
+  description_en: "Official Kuaidi100 MCP Server: tracking for 3000+ couriers, freight and delivery-time estimates. Requires a Kuaidi100 API key (paid API with a free trial)."
+  category: logistics
+  url: https://github.com/kuaidi100-api/kuaidi100-MCP
+  language: Python
+  auth: api_key
+  status: official
+
+- name: ofdkit
+  description: "OFD 电子发票读取工具（含 MCP Server）：提取 OFD 文件里的文字和发票字段（发票号、日期、买卖方、金额），本地运行，无需 API Key。"
+  description_en: "OFD e-invoice reader with an MCP server: extract text and invoice fields (number, date, buyer, seller, amounts) from Chinese OFD files. Runs locally, no API key needed."
+  category: finance
+  url: https://github.com/Edgar-311/ofdkit
+  language: Python
+  auth: none
+  status: community
+
+- name: 12306-mcp
+  description: "12306 火车票查询 MCP Server：时刻表、余票、票价、换乘查询；只能查票，不能下单。"
+  description_en: "12306 train ticket search MCP Server: timetables, seat availability, prices, connections. Search only, no booking."
+  category: travel
+  url: https://github.com/Joooook/12306-mcp
+  language: JavaScript
+  auth: none
+  status: community
+
+- name: yuque-mcp-server
+  description: "语雀官方 MCP Server：知识库的增删改查。"
+  description_en: "Official Yuque MCP Server: knowledge base CRUD."
+  category: knowledge
+  url: https://github.com/yuque/yuque-mcp-server
+  language: TypeScript
+  auth: token
+  status: official
+
+- name: filesystem
+  description: "官方参考实现：带可配置访问目录的安全文件读写。"
+  description_en: "Official reference server: secure file operations with configurable access controls (src/filesystem in the repo)."
+  category: filesystem
+  url: https://github.com/modelcontextprotocol/servers
+  language: TypeScript
+  auth: none
+  status: official
+
+- name: fetch
+  description: "官方参考实现：抓取网页内容并转为 Markdown，供模型使用。"
+  description_en: "Official reference server: fetch web content and convert it to Markdown for LLM use (src/fetch in the repo)."
+  category: web
+  url: https://github.com/modelcontextprotocol/servers
+  language: Python
+  auth: none
+  status: official
+
+- name: memory
+  description: "官方参考实现：基于知识图谱的持久记忆。"
+  description_en: "Official reference server: knowledge-graph-based persistent memory (src/memory in the repo)."
+  category: memory
+  url: https://github.com/modelcontextprotocol/servers
+  language: TypeScript
+  auth: none
+  status: official
+
+- name: github-mcp-server
+  description: "GitHub 官方 MCP Server：仓库、Issue、PR、Actions 等读写操作，需 Personal Access Token。"
+  description_en: "GitHub's official MCP Server: read/write repos, issues, PRs, Actions. Requires a Personal Access Token."
+  category: devtools
+  url: https://github.com/github/github-mcp-server
+  language: Go
+  auth: token
+  status: official
