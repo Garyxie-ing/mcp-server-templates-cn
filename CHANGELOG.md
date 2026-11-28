@@ -1,5 +1,9 @@
 # 更新日志 / Changelog
 
+## Unreleased
+
+- `registry/tools.yaml`：新增 `media` 分类与 B站 `bilibili-mcp` 条目（视频搜索、字幕/弹幕、评论、热门榜、UP主数据；扫码登录），目录共 12 条（中文场景 8 条）。
+
 ## 0.1.0 — 2026-11-27
 
 首版。

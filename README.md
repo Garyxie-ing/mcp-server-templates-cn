@@ -1,5 +1,7 @@
 # MCP Server 脚手架模板 + 中文生态目录
 
+[English](README.en.md)
+
 > 想用就先 Fork，再按模板改。
 
 一句话：MCP（Model Context Protocol）是让 AI 应用调用外部工具和数据的开放协议；这个仓库给你两个能直接跑的 MCP Server 模板，再加一份只收真实项目的中文场景工具目录。
