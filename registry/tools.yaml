@@ -6,12 +6,12 @@
 # - 未找到真实 MCP Server 的类别（例如：企业微信专用 Server、政务查询）不收录，
 #   不写占位条目。缺口见 registry/README.md。
 # - 每条的 language 取自对应仓库的 GitHub 语言统计；auth 为接入该 Server 所需的凭证类型。
-# - 最后核实日期 / Last verified: 2026-11-27。
+# - 最后核实日期 / Last verified: 2026-11-27；bilibili-mcp 增补核实 2026-11-28。
 #
 # 字段说明：
 # - name: 目录内的唯一标识（小写短横线）
 # - description / description_en: 中文 / 英文一句话说明
-# - category: maps | office | logistics | finance | travel | knowledge | filesystem | web | memory | devtools
+# - category: maps | office | logistics | finance | travel | knowledge | filesystem | web | memory | devtools | media
 # - url: 仓库或官网地址（必须真实可打开）
 # - language: 主要实现语言
 # - auth: none | api_key | oauth | token（接入时需要的凭证）
@@ -115,3 +115,12 @@
   language: Go
   auth: token
   status: official
+
+- name: bilibili-mcp
+  description: "B站 MCP Server：搜索视频、字幕/弹幕、评论、热门榜、UP主数据，还能发动态、上传视频；扫码登录，凭证存本地。"
+  description_en: "Bilibili MCP Server: search videos, subtitles/danmaku, comments, trending lists, creator stats; can also post moments and upload videos. QR-code login, credentials stored locally."
+  category: media
+  url: https://github.com/adoresever/bilibili-mcp
+  language: Python
+  auth: token
+  status: community

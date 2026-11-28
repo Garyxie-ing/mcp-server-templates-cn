@@ -11,21 +11,22 @@
 | `name` | 目录内唯一标识，小写短横线命名 |
 | `description` | 中文一句话说明 |
 | `description_en` | 英文一句话说明 |
-| `category` | `maps` / `office` / `logistics` / `finance` / `travel` / `knowledge` / `filesystem` / `web` / `memory` / `devtools` |
+| `category` | `maps` / `office` / `logistics` / `finance` / `travel` / `knowledge` / `filesystem` / `web` / `memory` / `devtools` / `media` |
 | `url` | 仓库或官网地址（必须真实可打开） |
 | `language` | 主要实现语言（以仓库 GitHub 语言统计为准） |
 | `auth` | `none` / `api_key` / `oauth` / `token` |
 | `status` | `official`（官方发布）/ `community`（社区维护） |
 
-## 目前的覆盖情况（2026-11-27 核实）
+## 目前的覆盖情况（2026-11-27 核实，bilibili-mcp 于 2026-11-28 增补）
 
-已收录 11 条，其中中文场景 7 条：
+已收录 12 条，其中中文场景 8 条：
 
 - 地图：高德地图（社区版 + 官方托管端点）
 - 办公协同：飞书 / Lark（官方）、钉钉文档、语雀（官方）
 - 物流：快递100（官方）
 - 发票：ofdkit（OFD 电子发票读取）
 - 出行：12306 火车票查询
+- 媒体：B站（社区）
 
 **未收录的类别（核实后确认无真实项目，暂留空）：**
 
