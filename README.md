@@ -58,7 +58,7 @@ claude mcp add example-mcp-server --transport http http://localhost:3000/mcp --h
 
 ## 目录怎么查
 
-`registry/tools.yaml` 是中文场景优先的 MCP 工具目录，目前收录 11 条（2026-11-27 核实），其中中文场景 7 条：高德地图、飞书 / Lark（官方）、钉钉文档、快递100（官方）、OFD 电子发票、12306 火车票查询、语雀（官方）；另有 4 条国际通用对照：Filesystem、Fetch、Memory（官方参考实现）、GitHub（官方）。
+`registry/tools.yaml` 是中文场景优先的 MCP 工具目录，目前收录 12 条（2026-11-28 核实），其中中文场景 8 条：高德地图、飞书 / Lark（官方）、钉钉文档、快递100（官方）、OFD 电子发票、12306 火车票查询、语雀（官方）、B站；另有 4 条国际通用对照：Filesystem、Fetch、Memory（官方参考实现）、GitHub（官方）。
 
 收录标准：只收真实可验证的项目，URL 必须能打开，不编造、不写占位条目。**未找到真实 MCP Server 的类别不收录**：企业微信（未找到专用 Server）、政务查询（未找到）。想加新条目按 `registry/README.md` 里的流程提 PR。
 
@@ -70,6 +70,11 @@ claude mcp add example-mcp-server --transport http http://localhost:3000/mcp --h
 
 ## English summary
 
-MCP (Model Context Protocol) is an open protocol that lets AI applications call external tools and data. This repo gives you two ready-to-run MCP Server templates (TypeScript with the official TS SDK, Python with the official Python SDK 2.x) — both with Streamable HTTP transport, API key auth, demo tool and resource, tests, and Docker — plus a registry of MCP tools focused on Chinese services (`registry/tools.yaml`, verified entries only, 11 entries as of 2026-11-27).
+MCP (Model Context Protocol) is an open protocol that lets AI applications call external tools and data. This repo gives you two ready-to-run MCP Server templates (TypeScript with the official TS SDK, Python with the official Python SDK 2.x) — both with Streamable HTTP transport, API key auth, demo tool and resource, tests, and Docker — plus a registry of MCP tools focused on Chinese services (`registry/tools.yaml`, verified entries only, 12 entries as of 2026-11-28).
 
 **Fork this repo first, then adapt a template.** See each template's README for quick start, tests, and Docker deployment. Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 相关项目
+
+- [GEO 官网模板](https://github.com/Garyxie-ing/geo-website-template) — Fork 就能用的品牌官网模板，为 AI 搜索优化
+- [多 AI 工作台](https://github.com/Garyxie-ing/multi-ai-workbench) — 一个界面管多个 AI 的任务、提示词和资源，零 API 成本

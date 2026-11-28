@@ -58,7 +58,7 @@ claude mcp add example-mcp-server --transport http http://localhost:3000/mcp --h
 
 ## How to browse the registry
 
-`registry/tools.yaml` is an MCP tool registry with Chinese services first — 11 entries as of 2026-11-27 (verified one by one): 7 Chinese services — Amap, Feishu / Lark (official), DingTalk Docs, Kuaidi100 (official), OFD e-invoice, 12306 train-ticket lookup, Yuque (official) — plus 4 international references: Filesystem, Fetch, Memory (official reference implementations), GitHub (official).
+`registry/tools.yaml` is an MCP tool registry with Chinese services first — 12 entries as of 2026-11-28 (verified one by one): 8 Chinese services — Amap, Feishu / Lark (official), DingTalk Docs, Kuaidi100 (official), OFD e-invoice, 12306 train-ticket lookup, Yuque (official), Bilibili — plus 4 international references: Filesystem, Fetch, Memory (official reference implementations), GitHub (official).
 
 Inclusion rule: only real, verifiable projects; every URL must open. Nothing is invented and no placeholder entries are written. **Categories with no real MCP Server found are not listed**: WeChat Work (no dedicated Server found) and government-service queries (none found). To add an entry, follow the process in `registry/README.md` and open a PR.
 
@@ -69,3 +69,8 @@ PRs are welcome: add registry entries, add new templates, fix docs. Please read 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Related projects
+
+- [GEO Website Template](https://github.com/Garyxie-ing/geo-website-template) — a forkable brand website template optimised for AI search
+- [Multi-AI Workbench](https://github.com/Garyxie-ing/multi-ai-workbench) — manage tasks, prompts and resources across multiple AIs in one interface, zero API cost
